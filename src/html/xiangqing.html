@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情页</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/common2.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/xiangqing.css"/>
+	<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="../iconfont2/iconfont.css"/>
+	<!--放大镜插件-->
+	<link rel="stylesheet" type="text/css" href="../lib/bigglass/css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="../lib/bigglass/css/htmleaf-demo.css"/>
+	<link rel="stylesheet" type="text/css" href="../lib/bigglass/css/jquery.exzoom.css"/>
+</head>
+<body>
+<!--侧边栏-->
+<div id="p_inside">
+	<ul>
+		<li><i class="iconfont icon-users"></i></li>
+		<li class="cart">
+			<i class="iconfont icon-icon1"></i>
+			<span>进货单</span>
+		</li>
+		<li><i class="iconfont icon-shoucang"></i></li>
+		<li><i class="iconfont icon-QQ"></i></li>
+		<li><i class="iconfont icon-dianhua"></i></li>
+		<li><i class="iconfont icon-erweima"></i></li>
+		<li><i class="iconfont icon-icon"></i></li>
+	</ul>
+</div>	
+
+<!--主要内容块-->
+<div id="pfhoo">
+	<!--顶部图片-->
+	<div id="p_top"><img src="../img/top_img.png"/></div>
+	
+	<!--头部栏-->
+	<div id="p_topnav">
+		<div class="container">
+			<div class="h_left fl">
+				<ul>
+					<li>您好！<span>欢迎来到批发户！</span></li>
+					<li id="denglu">请登录</li>
+					<li>免费注册</li>
+				</ul>
+			</div>
+			
+			<div class="h_right fr">
+				<ul>
+					<li id="myhu">
+						<span>我的批发户</span>
+						<i class="iconfont icon-dayuhao"></i>
+						<ul id="two">
+							<li>我的订单</li>
+							<li>我的数据</li>
+							<li>我的产品</li>
+							<li>我的权限</li>
+							<li>专属图片</li>
+							<li>快速选购</li>
+							<li>产品动态</li>
+							<li>我的API</li>
+							<li>我的钱包</li>
+							<li>账户管理</li>
+							<li>新手帮助</li>
+							<li>一件代发</li>
+						</ul>
+					</li>
+					<li id="shoucangjia">
+						<span>收藏夹</span>
+						<i class="iconfont icon-dayuhao"></i>
+						<ul id="scang">
+							<li>收藏的货品</li>
+							<li>收藏的店铺</li>
+						</ul>
+					</li>
+					<li>行业资讯</li>
+					<li>我是卖家</li>
+					<li id="kefu">
+						<span>平台客服</span>
+						<i class="iconfont icon-dayuhao"></i>
+						<ul id="kfu">
+							<li>买家客服</li>
+							<li>卖家客服</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!--搜索栏-->
+	<div id="p_header">
+		<div class="container">
+			<div class="logo fl"><img src="../img/logonew.png"/></div>
+			<div class="searchs fl">
+				<ul id="hot-recommended">
+					<li>热搜词：</li>
+					<li class="_blank">纯银首饰</li>
+					<li class="_blank">925戒指</li>
+					<li class="_blank">抖音爆款</li>
+					<li class="_blank">施华洛世奇元素</li>
+				</ul>
+				<div id="search-form">
+					<input type="button" id="btn1" value="货源" />
+					<input type="text" id="s_text" value="" placeholder="请输入你想要的商品"/>
+					<input type="button" id="btn2" value="搜索" />
+				</div>
+			</div>
+			
+			<div class="btns fr">
+				<div class="gouwu fl">
+					<i class="iconfont icon-icon1"></i>
+					<span>进货单（0）</span>
+				</div>
+				<div class="shuju fr">
+					<i class="iconfont icon-shujubao"></i>
+					<span>数据包（0）</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--主要内容部分-->
+	<div id="main_banner_boxs">
+		<div class="container">
+			<!--顶部-->
+			<div class="boxs_top">
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">时尚饰品</a></li>
+					<li><a href="">戒指、指环</a></li>
+					<li><a href="">201809120021001479</a></li>
+				</ul>
+				<span class="fr">更多</span>
+			</div>
+			
+			<!--商品详情部分-->
+			<div class="boxs_contents">
+				<!--放大镜插件区域-->
+				<div class="exzoom fl" id="exzoom">
+				    <!--大图区域-->
+				    <div class="exzoom_img_box">
+				        <ul class='exzoom_img_ul'>
+				            <li><img src="../lib/bigglass/images/photos/img01.jpg"/></li>
+				            <li><img src="../lib/bigglass/images/photos/img02.jpg"/></li>
+				            <li><img src="../lib/bigglass/images/photos/img03.jpg"/></li>
+				            <li><img src="../lib/bigglass/images/photos/img04.jpg"/></li>
+				            <li><img src="../lib/bigglass/images/photos/img05.jpg"/></li>
+				            <li><img src="../lib/bigglass/images/photos/img06.jpg"/></li>
+				            <li><img src="../lib/bigglass/images/photos/img07.jpg"/></li>
+				            <li><img src="../lib/bigglass/images/photos/img08.jpg"/></li>
+				        </ul>
+				    </div>
+				    <!--缩略图导航-->
+				    <div class="exzoom_nav"></div>
+				    <!--控制按钮-->
+				    <p class="exzoom_btn">
+				        <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a>
+				        <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a>
+				    </p>
+				</div>
+				
+				<!--右边商品信息部分-->
+				<div class="goods_inf fr">
+					<!--上半部分-->
+					<div class="inf_top">
+						<p class="title"><span class="tit" id="tit">流行饰品微镶镂空蝴蝶戒指 欧美跨境专供镀金戒指 女戒定制批发</span><br/>201809120021001479</p>
+						<p class="place">
+							<span>spu：201809120021001479 </span>
+							<span>产业带：汕尾产地</span>
+							<span>店铺名称：浩涵首饰厂</span>
+						</p>
+						<p class="price">批发价：<span class="pri">￥17.80</span></p>
+						<p class="shu">≥1件</p>
+						<p class="sx">
+							<span>适销：</span>
+							<span class="ff">Amazom</span>
+							<span class="ff">Ebay</span>
+							<span class="ff">Wish</span>
+						</p>
+					</div>
+					<!--中间部分-->
+					<div class="detail_style">
+						<div class="detail_style_title">
+							款式：金属颜色/戒指大小
+						</div>
+						<!--款式部分-->
+						<ul class="kuangshi">
+							<li>
+								<img src="../img/a13.jpg"/>
+								<span class="size">
+									镀白金/16
+								</span>
+								<span class="model">2018101700001</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li>
+								<img src="../img/c1.jpg"/>
+								<span class="size">
+									镀玫瑰金/16
+								</span>
+								<span class="model">2018101700002</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li>
+								<img src="../img/c18.jpg"/>
+								<span class="size">
+									镀白金/17
+								</span>
+								<span class="model">2018101700003</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li>
+								<img src="../img/d15.jpg"/>
+								<span class="size">
+									镀玫瑰金/17
+								</span>
+								<span class="model">2018101700004</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li>
+								<img src="../img/c9.jpg"/>
+								<span class="size">
+									镀白金/18
+								</span>
+								<span class="model">2018101700005</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li class="inf_hidden" style="display: none;">
+								<img src="../img/d5.jpg"/>
+								<span class="size">
+									镀玫瑰金/18
+								</span>
+								<span class="model">2018101700006</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li class="inf_hidden" style="display: none;">
+								<img src="../img/e7.jpg"/>
+								<span class="size">
+									镀白金/19
+								</span>
+								<span class="model">2018101700007</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li class="inf_hidden" style="display: none;">
+								<img src="../img/f6.jpg"/>
+								<span class="size">
+									镀玫瑰金/19
+								</span>
+								<span class="model">2018101700008</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li class="inf_hidden" style="display: none;">
+								<img src="../img/e7.jpg"/>
+								<span class="size">
+									镀白金/20
+								</span>
+								<span class="model">2018101700009</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+							<li class="inf_hidden" style="display: none;">
+								<img src="../img/c1.jpg"/>
+								<span class="size">
+									镀玫瑰金/20
+								</span>
+								<span class="model">20181017000010</span>
+								<span class="inventory">现货销售（库存50）</span>
+								<span class="btn_action">
+									<input type="button" id="cutnum" value="-" />
+									<input type="text" id="nownum" value="0" />
+									<input type="button" id="addnum" value="+" />
+								</span>
+							</li>
+						</ul>
+						<!--下拉按钮部分-->
+						<div id="aline"></div>
+						<div id="up_down">
+							<i class="iconfont icon-dayuhao"></i>
+						</div>
+						
+					</div>
+					<!--下半部分加入购物车系列-->
+					<div class="shops">
+						<input type="button" id="add_carts" value="加入购物车" />
+						<input type="button" id="add_data" value="加入数据包" />
+					</div>
+					<p class="jiaoyi">
+						<span class="ti">交易保障：</span>
+						<span class="ico"><i class="iconfont icon-servicewuyoutuihuanhuo"></i>15天退换</span>
+						<span class="ico"><i class="iconfont icon-zhengpinbaozhang2"></i>正品保障</span>
+						<span class="ico"><i class="iconfont icon-serviceshandianfahuo"></i>闪电发货</span>
+						<span class="ico"><i class="iconfont icon-anquan"></i>安全购物</span>
+					</p>
+					<p class="pay">
+						<span class="ti">支付方式：</span>
+						<span class="ico"><i class="iconfont icon-zhifubao"></i>支付宝</span>
+						<span class="ico"><i class="iconfont icon-weixin"></i>微信支付</span>
+						<span class="ico"><i class="iconfont icon-xinyongqiahuankuan"></i>信用支付</span>
+						<span class="ti">交易支持：</span>
+						<span class="ico"><i class="iconfont icon-pifa"></i>直批/混批</span>
+					</p>
+					
+				</div>
+				
+			</div>
+			
+			<!--卖家热推-->
+			<div class="retui_news">
+				<p class="news_title">卖家热推</p>
+				<ul>
+					<li>
+						<a href="">
+							<p><img src="../img/d13.jpg"/></p>
+							<h6>日韩时尚精致铜镶一圈锆石戒指女 高品质电镀指环手饰厂家直...</h6>
+						</a>						
+					</li>
+					<li>
+						<a href="">
+							<p><img src="../img/e12.jpg"/></p>
+							<h6>日韩风时尚新款ring饰品 八心八箭六爪镶钻戒指女仿真钻...</h6>
+						</a>		
+					</li>
+					<li>
+						<a href="">
+							<p><img src="../img/j1.jpg"/></p>
+							<h6>自然简约炫目雏菊镶锆石戒指女 浪漫相伴花朵镀玫瑰白金戒指...</h6>
+						</a>		
+					</li>
+					<li>
+						<a href="">
+							<p><img src="../img/j2.jpg"/></p>
+							<h6>简约时尚婚庆微镶锆石戒指女 新款玫瑰金皇冠电镀指环厂家直...</h6>
+						</a>		
+					</li>
+					<li>
+						<a href="">
+							<p><img src="../img/r1.jpg"/></p>
+							<h6>简约风精品热卖饰品 环保铜镀金戒指 镶AAA锆石交叉戒指...</h6>
+						</a>		
+					</li>
+				</ul>
+			</div>
+			
+			<!--左边店铺信息和新品推荐-->
+			<div class="shops_left fl">
+				<!--店铺信息-->
+				<div class="dianpu_inf">
+					<h4>店铺商家信息</h4>
+					<h6>店铺名称：浩涵首饰厂</h6>
+					<p>主营产品：时尚饰品</p>
+					<p>商品总数：102</p>
+					<p>入驻时间：2018/9/12 0:00:00</p>
+					<p>产业带：汕尾产地</p>
+					<p>联系电话：13560551596</p>
+					<div class="divbutton">
+						<a href="">
+							<i class="iconfont icon-shoucang"></i>
+							<span>收藏店铺</span>
+						</a>
+					</div>
+					<div class="divbutton">
+						<a href="">
+							<i class="iconfont icon-dianpu"></i>
+							<span>进入店铺</span>
+						</a>
+					</div>
+					<div class="divbutton" id="blues">
+						<a href="">
+							<i class="iconfont icon-qq"></i>
+							<span>联系客服</span>
+						</a>
+					</div>
+				</div>
+				<!--新品推荐-->
+				<div class="new_goods">
+					<h6>新品推荐</h6>
+					<div class="underline"></div>
+					<!--新品信息-->
+					<ul>
+						<li>
+							<p class="img"><a href=""><img src="../img/v16.jpg"/></a></p>
+							<p class="sale_num">销量0件</p>
+							<p class="titles"><a href="">wish爆款铜戒指女 ring圆形镶钻戒指 跨境镀金锆石戒指...</a></p>
+						</li>
+						<li>
+							<p class="img"><a href=""><img src="../img/x3.jpg"/></a></p>
+							<p class="sale_num">销量0件</p>
+							<p class="titles"><a href="">欧美爆款铜手饰 闪耀镀金锆石戒指女 脉脉含情皇冠镶钻戒指批发</a></p>
+						</li>
+						<li>
+							<p class="img"><a href=""><img src="../img/a7.jpg"/></a></p>
+							<p class="sale_num">销量0件</p>
+							<p class="titles"><a href="">厂家直销欧美饰品 新款微镶双环灵动小圈戒指 螺丝帽锆石指环批...</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--右边商品参数-->
+			<div class="canshu fr">
+				<!--列表-->
+				<div class="lis">
+					<ul class="lis_tab">
+						<li class="_active">产品描述</li>
+						<li>成交记录</li>
+						<li>客户评价</li>
+						<li>采购说明</li>
+					</ul>
+				</div>
+				<!--产品描述-->
+				<div class="_detail con" style="display: block;">
+					<div id="miaoshu">
+						<p>
+							<span>镶嵌物材质：锆石</span>
+							<span>性别：女</span>
+							<span>热门材质 ：铜</span>
+							<span>造型：昆虫</span>
+						</p>
+						<p>
+							<span>场合：宴会</span>
+							<span>处理工艺：镶锆石</span>
+							<span>品牌：浩涵</span>
+							<span>重量：3.00 g</span>
+						</p>
+					</div>
+					<!--详情图片-->
+					<div id="big_img_detail">
+						<a href=""><img src="../img/de1 (1).png"/></a>
+						<a href=""><img src="../img/de1 (2).png"/></a>
+					</div>
+				</div>
+				<!--成交记录-->
+				<div class="jilu con">
+					成交记录
+				</div>
+				<!--客户评价-->
+				<div class="pingjia con">
+					<textarea name="tex" rows="10" cols="90" id="tex" placeholder="写下你的评论..."></textarea><br />
+					<input type="button" id="sub_btns" value="发表" />
+					<h1>评论区</h1>
+					<ul id="sub_contents">
+						<!--<li>你好</li>
+						<li>好啊najnlkflahpofnkjakblka</li>-->
+					</ul>
+				</div>
+				<!--采购说明-->
+				<div class="caigou con">
+					采购说明
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+		<!--尾部部分-->
+	<div id="footer">
+		<div class="container">
+			<!--多个li部分-->
+			<ul class="footer-main">
+				<li>
+					<dl>
+						<dt>新手指引</dt>
+						<dd><a href="">注册登录</a></dd>
+						<dd><a href="">选购下单</a></dd>
+						<dd><a href="">下载数据</a></dd>
+						<dd><a href="">批量刊登</a></dd>
+						<dd><a href="">物流配送</a></dd>
+						<dd><a href="">退货退款</a></dd>
+						<dd><a href="">常见问题</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>买家帮助</dt>
+						<dd><a href="">账户资料</a></dd>
+						<dd><a href="">在线下单</a></dd>
+						<dd><a href="">产品数据</a></dd>
+						<dd><a href="">支付方式 </a></dd>
+						<dd><a href="">退款退货</a></dd>
+						<dd><a href="">物流配送</a></dd>
+						<dd><a href="">售后服务</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>卖家帮助</dt>
+						<dd><a href="">怎么入驻</a></dd>
+						<dd><a href="">入驻条件</a></dd>
+						<dd><a href="">产品上架</a></dd>
+						<dd><a href="">申请提现</a></dd>
+						<dd><a href="">运费设置</a></dd>
+						<dd><a href="">发货管理</a></dd>
+						<dd><a href="">退货管理</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>关于我们</dt>
+						<dd><a href="">平台介绍</a></dd>
+						<dd><a href="">公司介绍</a></dd>
+						<dd><a href="">招商入驻</a></dd>
+						<dd><a href="">联系我们</a></dd>
+						<dd><a href="">招贤纳士</a></dd>
+						<dd><a href="">站点地图</a></dd>
+						<dd><a href="">合作伙伴</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>活动专场</dt>
+						<dd><a href="">采购伙拼</a></dd>
+						<dd><a href="">一件代发</a></dd>
+						<dd><a href="">品牌授权</a></dd>
+						<dd><a href="">品牌商家</a></dd>
+						<dd><a href="">首饰产地</a></dd>
+						<dd><a href="">新品爆款</a></dd>
+						<dd><a href="">热销排行</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dd>销售客服热线</dd>
+						<dd class="tel">400-860-5859</dd>
+						<dd>投诉建议电话</dd>
+						<dd class="tel">18123977231</dd>
+						<dd>周一至周日9:00-18:00</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="../img/MobileCode.png"/></dt>
+						<dd>手机下单 轻松采购</dd>
+					</dl>
+				</li>
+			</ul>
+			
+			<!--中间-->
+			<div class="copyright">
+				<a href="">© 2018 PFHOO.com 版权所有   粤ICP备11062211号</a>
+			</div>
+			
+			<div class="footadd">
+				<ul>
+					<li><img src="../img/alipay.jpg" alt="" /></li>
+					<li><img src="../img/aliyun.jpg" alt="" /></li>
+					<li><img src="../img/Bottom_360rz.png" alt="" /></li>
+					<li><img src="../img/pfhooIMG.jpg" alt="" /></li>
+					<li><img src="../img/shiming.jpg" alt="" /></li>
+					<li><img src="../img/newGovIcon.gif" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+	
+</body>
+</html>
+<script src="../lib/jquery-1.10.1.min.js"></script>
+<script src="../js/cookie.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/xiangqing.js"></script>
+
+<!--放大镜插件区域-->
+<script src="../lib/bigglass/js/jquery-1.11.0.min.js"></script>
+<script src="../lib/bigglass/js/jquery.exzoom.js"></script>
+<script>
+	$("#exzoom").exzoom({
+	    autoPlay: false,
+	});//方法调用，务必在加载完后执行
+</script>

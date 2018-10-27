@@ -1,0 +1,73 @@
+#p_mains{
+    padding: 100px 0;
+    width: 100%;
+    height: 620px !important;
+    .login_img{
+        width: 720px;
+        height: 400px;
+    }
+    
+    //登录模块
+    .login_box{
+        width: 440px;
+        height: 400px;
+        border: 1px solid #ccc;
+        margin-right: 40px;
+        .hd{
+            width: 438px;
+            height: 50px;
+            background: #F5F5F5;
+            color: #bc338b;
+            text-align: center;
+            line-height: 50px;
+        }
+        .bd{
+            width: 438px;
+            height: 297px;
+            padding: 30px 0 0 38px;
+            .login-user{
+                width: 360px;
+                height: 38px;
+                border: 1px solid #ccc;
+                padding-left: 10px;
+            }
+            .login-warn{
+                width: 360px;
+                height: 24px;
+            }
+            .right,#bottom{
+                a:hover{
+                    color: #bc338b;
+                    text-decoration: underline;
+                }
+            }
+            
+            #check_box{
+                width: 360px;
+                height: 14px;
+                span,a{
+                    font-size: 14px;
+                }
+            }
+            
+            //登录按钮
+            #login_btn{
+                width: 360px;
+                height: 40px;
+                background: #bc338b;
+                color: white;
+                margin: 24px 0;
+                cursor: pointer;
+            }
+            
+            #bottom{
+                a{
+                    color: black;
+                    font-size: 14px;
+                }
+            }
+        }
+        
+    }
+    
+}

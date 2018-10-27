@@ -1,0 +1,210 @@
+#p_inside {
+  width: 35px;
+  height: 100%;
+  background: #07223b;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 120;
+}
+#p_inside ul {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 120px;
+}
+#p_inside ul li {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+#p_inside ul li:hover {
+  background: white;
+  color: grey;
+}
+#p_inside ul li i {
+  font-size: 20px;
+}
+#p_inside ul .cart {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+#pfhoo {
+  width: 100%;
+  z-index: -1000;
+}
+#pfhoo #p_top img {
+  width: 1314px;
+  height: 80px;
+}
+#pfhoo #p_topnav {
+  height: 30px;
+  background: #f6f6f6;
+  border-bottom: 1px solid #ccc;
+}
+#pfhoo #p_topnav .h_left {
+  width: 320px;
+  height: 100%;
+}
+#pfhoo #p_topnav .h_left ul li {
+  float: left;
+  padding: 0px 5px;
+  line-height: 30px;
+  font-size: 14px;
+}
+#pfhoo #p_topnav .h_left ul span:hover {
+  color: #cf2985;
+}
+#pfhoo #p_topnav .h_left ul li:nth-child(2) {
+  color: #cf2985;
+  cursor: pointer;
+}
+#pfhoo #p_topnav .h_left ul li:nth-child(3):hover {
+  color: #cf2985;
+  cursor: pointer;
+}
+#pfhoo #p_topnav .h_right {
+  width: 480px;
+  height: 100%;
+}
+#pfhoo #p_topnav .h_right ul li {
+  float: left;
+  padding: 0px 10px;
+  line-height: 30px;
+  font-size: 14px;
+}
+#pfhoo #p_topnav .h_right ul li:hover {
+  color: #cf2985;
+  cursor: pointer;
+}
+#pfhoo #p_topnav .h_right ul #myhu {
+  width: 125px;
+  position: relative;
+}
+#pfhoo #p_topnav .h_right ul #myhu #two {
+  width: 300px;
+  height: 120px;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: 10px;
+  color: black;
+  display: none;
+  background: white;
+}
+#pfhoo #p_topnav .h_right ul #myhu #two li {
+  width: 90px;
+}
+#pfhoo #p_topnav .h_right ul #shoucangjia {
+  width: 90px;
+  position: relative;
+}
+#pfhoo #p_topnav .h_right ul #shoucangjia #scang {
+  width: 95px;
+  height: 60px;
+  border: 1px solid #ccc;
+  color: black;
+  position: absolute;
+  right: 0;
+  display: none;
+  background: white;
+}
+#pfhoo #p_topnav .h_right ul #kefu {
+  width: 100px;
+  position: relative;
+}
+#pfhoo #p_topnav .h_right ul #kefu #kfu {
+  width: 90px;
+  height: 60px;
+  border: 1px solid #ccc;
+  color: black;
+  position: absolute;
+  right: 0;
+  display: none;
+  background: white;
+}
+#pfhoo #p_logos {
+  height: 152px;
+  border-bottom: 2px solid #cf2985;
+}
+#pfhoo #p_logos #lkn_logo {
+  width: 210px;
+  height: 100%;
+  display: inline-block;
+  padding-top: 50px;
+}
+#pfhoo #p_logos span {
+  font-weight: 600;
+}
+#pfhoo #p_mains {
+  height: 750px;
+}
+#pfhoo #footer {
+  width: 100%;
+  height: 503px;
+  background: #07223b;
+}
+#pfhoo #footer .footer-main {
+  width: 100%;
+  height: 274px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  padding-top: 20px;
+}
+#pfhoo #footer .footer-main li {
+  flex: 1;
+  text-align: center;
+}
+#pfhoo #footer .footer-main li dl dt {
+  color: white;
+  margin-bottom: 15px;
+}
+#pfhoo #footer .footer-main li dl dd a {
+  color: white;
+  font-size: 14px;
+}
+#pfhoo #footer .footer-main li dl dd a:hover {
+  text-decoration: underline;
+}
+#pfhoo #footer .footer-main li:nth-child(6) dl dd {
+  color: white;
+  font-size: 14px;
+}
+#pfhoo #footer .footer-main li:nth-child(6) dl .tel {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f19f00;
+}
+#pfhoo #footer .footer-main li:nth-child(7) dl dd {
+  color: white;
+  font-size: 14px;
+}
+#pfhoo #footer .copyright {
+  width: 100%;
+  height: 14px;
+  padding: 15px 0;
+  text-align: center;
+}
+#pfhoo #footer .copyright a {
+  color: white;
+  font-size: 14px;
+}
+#pfhoo #footer .footadd {
+  width: 100%;
+  height: 82px;
+  margin-top: 80px;
+}
+#pfhoo #footer .footadd ul {
+  width: 100%;
+  height: 82px;
+  padding-left: 150px;
+}
+#pfhoo #footer .footadd ul li {
+  float: left;
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,819 @@
+@charset "utf-8"; //编码设置
+//设置公共代码
+@mixin publics($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+//侧边栏
+#p_inside {
+    @include publics(35px, 100%);
+    background: #07223b;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 120;
+    ul {
+        @include publics(100%, 500px);
+        position: absolute;
+        top: 120px;
+        li {
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px 0px;
+            cursor: pointer;
+            &:hover{
+                background: white;
+                color: grey;
+            }
+            i {
+                font-size: 20px;
+            }
+        }
+        .cart {
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+        }
+    }
+}
+
+//主页部分
+#pfhoo {
+    height: 3000px;
+    width: 100%;
+    z-index: -1000;
+    //顶部图片
+    #p_top {
+        img {
+            @include publics(1314px, 80px);
+        }
+    }
+    //下拉按钮
+    #xiala {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    //头部栏
+    #p_topnav {
+        height: 30px;
+        background: #f6f6f6;
+        border-bottom: 1px solid #ccc;
+        //左边部分
+        .h_left {
+            @include publics(320px, 100%);
+            ul {
+                li {
+                    float: left;
+                    padding: 0px 5px;
+                    line-height: 30px;
+                    font-size: 14px;
+                }
+                span:hover {
+                    color: #cf2985;
+                }
+                li:nth-child(2) {
+                    color: #cf2985;
+                    cursor: pointer;
+                }
+                li:nth-child(3):hover {
+                    color: #cf2985;
+                    cursor: pointer;
+                }
+            }
+        }
+        //右边部分
+        .h_right {
+            @include publics(480px, 100%);
+            ul {
+                li {
+                    float: left;
+                    padding: 0px 10px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    &:hover {
+                        color: #cf2985;
+                        cursor: pointer;
+                    }
+                }
+                //我的批发户
+                #myhu {
+                    width: 125px;
+                    position: relative;
+                    #two {
+                        @include publics(300px, 120px);
+                        border: 1px solid #ccc;
+                        position: absolute;
+                        right: 10px;
+                        color: black;
+                        display: none;
+                        background: white;
+                        li {
+                            width: 90px;
+                        }
+                    }
+                }
+                //收藏夹
+                #shoucangjia {
+                    width: 90px;
+                    position: relative;
+                    #scang {
+                        @include publics(95px, 60px);
+                        border: 1px solid #ccc;
+                        color: black;
+                        position: absolute;
+                        right: 0;
+                        display: none;
+                        background: white;
+                    }
+                }
+                //平台客服
+                #kefu {
+                    width: 100px;
+                    position: relative;
+                    #kfu {
+                        @include publics(90px, 60px);
+                        border: 1px solid #ccc;
+                        color: black;
+                        position: absolute;
+                        right: 0;
+                        display: none;
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+    //搜索部分
+    #p_header {
+        height: 150px;
+        .logo {
+            @include publics(260px, 100%);
+            line-height: 150px;
+        }
+        //搜索框
+        .searchs {
+            @include publics(500px, 98px);
+            margin-left: 80px;
+            #hot-recommended {
+                height: 16px;
+                margin: 36px 0 5px 0;
+                li {
+                    float: left;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    color: grey;
+                }
+                ._blank:hover {
+                    color: #cf2985;
+                    cursor: pointer;
+                }
+            }
+            #search-form {
+                font-size: 0;
+                height: 40px;
+                border: 2px solid #cf2985;
+                #btn1 {
+                    @include publics(83px, 100%);
+                    background: white;
+                    border-right: 1px solid #ccc;
+                }
+                #s_text {
+                    @include publics(311px, 100%);
+                }
+                #btn2 {
+                    @include publics(102px, 100%);
+                    background: #cf2985;
+                    color: white;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+        //按钮
+        .btns {
+            @include publics(350px, 98px);
+            text-align: center;
+            color: white;
+            .gouwu {
+                @include publics(135px, 40px);
+                background: #cf2985;
+                margin-left: 30px;
+                margin-top: 56px;
+                line-height: 40px;
+                cursor: pointer;
+            }
+            .shuju {
+                @include publics(135px, 40px);
+                background: #003d89;
+                margin-right: 10px;
+                margin-top: 56px;
+                line-height: 40px;
+                cursor: pointer;
+            }
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+    //导航栏
+    #p_nav {
+        z-index: 5;
+        @include publics(100%, 38px);
+        border-bottom: 2px solid #cf2985;
+        .mainnav_dl {
+            position: relative;
+            @include publics(240px, 36px);
+            background: #cf2985;
+            dt {
+                text-align: center;
+                @include publics(240px, 36px);
+                a {
+                    color: white;
+                    font-size: 18px;
+                    line-height: 36px;
+                    i {
+                        font-size: 22px;
+                    }
+                    .sizem {
+                        font-size: 14px;
+                    }
+                }
+            }
+            dd {
+                @include publics(240px, 402px);
+//              background: #003e8a;
+                position: absolute;
+                z-index: 120;
+                .mainnav_dl-con_ul {
+                    background: #003e8a;
+                    position: relative;
+                    
+                    .mainnav_dl-li {
+                        @include publics(100%, 155px);
+                        padding: 10px 50px;
+                        
+                        p {
+                            font-size: 21px;
+                            i {
+                                color: #cf2985;
+                            }
+                            a {
+                                color: white;
+                            }
+                        }
+                        .mainnav_dl-li-div {
+                            @include publics(160px, 92px);
+                            a {
+                                font-size: 14px;
+                                color: white;
+                                display: inline-block;
+                                width: 49px;
+                            }
+                        }
+                    }
+                    
+                    li:nth-child(2) {
+                        @include publics(100%, 132px);
+                    }
+                    li:nth-child(3) {
+                        @include publics(100%, 109px);
+                        .mainnav_dl-li-div {
+                            @include publics(160px, 60px);
+                            a {
+                                width: 75px;
+                            }
+                        }
+                    }
+                    
+                    //二级菜单
+                    #twomenu{
+                        @include publics(765px, 400px);
+                        background: white;
+                        position: absolute;
+                        top: 2px;
+                        left: 240px;
+                        display: none;
+                            .menu_top,.menu_bottom{
+                                @include publics(100%, 200px);
+                                display: flex;
+                                padding-top: 10px;
+                                padding-left: 10px;
+                                div{
+                                   flex: 1;
+                                }
+                                .the_one,.the_two,.the_san{
+                                h1{
+                                   margin-bottom: 10px;
+                                }
+                                li{
+                                    float: left;
+                                    width: 65px;
+                                    height: 20px;
+                                    border: 1px dashed #ccc;
+                                    margin: 5px;
+                                    text-align: center;
+                                    a{
+                                       color: grey;
+                                       font-size: 14px;
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                    
+                    
+                }
+            }
+        }
+        .sidenav {
+            @include publics(700px, 36px);
+            li {
+                float: left;
+                width: 111px;
+                text-align: center;
+                line-height: 36px;
+                a {
+                    color: black;
+                    &:hover {
+                        color: #cf2985;
+                    }
+                }
+            }
+            li:nth-child(1) a {
+                color: #cf2985;
+            }
+        }
+        .floatNav {
+            @include publics(210px, 36px);
+            li {
+                float: left;
+                @include publics(68px, 36px);
+                line-height: 36px;
+                a {
+                    color: black;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+    
+    //右边栏
+    .p_entrance {
+        @include publics(210px, 402px);
+        position: absolute;
+        right: 50px;
+        z-index: 120;
+        .login {
+            @include publics(100%, 100px);
+            background: #003e8a;
+            color: white;
+            text-align: center;
+            h1 {
+                font-size: 20px;
+                font-weight: 600;
+                font-style: italic;
+                padding: 5px 0;
+            }
+            p {
+                font-size: 14px;
+                padding: 2px 0;
+                button {
+                    width: 100px;
+                    height: 30px;
+                    border: 1px solid #ccc;
+                    background: white;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .info {
+            @include publics(100%, 302px);
+            background: #f0f0f0;
+            li {
+                @include publics(100%, 60px);
+                display: flex;
+                padding: 10px 0 0 5px;
+                .img {
+                    flex: 1;
+                }
+                .wenzi {
+                    flex: 4;
+                    h1 {
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #7f7f7f;
+                    }
+                }
+            }
+        }
+    }
+    //轮播图
+    #sildshow {
+        z-index: 2;
+    }
+    //主要内容部分
+    #main_contents {
+        //相同的样式
+        .eShop_content_title {
+            height: 31px;
+            border-bottom: 2px solid #07223b;
+            b {
+                font-size: 20px;
+            }
+            a {
+                font-size: 14px;
+                color: #98a5c3;
+                line-height: 31px;
+            }
+        }
+        .eShop_content_box {
+            display: flex;
+            padding-top: 10px;
+            .eShop_content_left {
+                flex: 2;
+                a {
+                    img {
+                        height: 525px;
+                    }
+                }
+            }
+            .eShop_content_right {
+                flex: 6;
+            }
+        }
+        //新品爆款
+        #xinpin {
+            @include publics(100%, 596px);
+            padding-top: 30px;
+            .eShop_content_box {
+                @include publics(100%, 535px);
+                #tab {
+                    @include publics(900px, 525px);
+                    #btn {
+                        @include publics(150px, 44px);
+                        background: #f6f6f6;
+                        cursor: pointer;
+                        //下面两行是为了去掉按钮之间默认空格
+                        display: inline-block;
+                        margin-right: -5px;
+                    }
+                    .active {
+                        background: white !important;
+                    }
+                    #content {
+                        @include publics(900px, 480px);
+                        display: none;
+                        .tabs {
+                            @include publics(900px, 480px);
+                            li {
+                                float: left;
+                                @include publics(225px, 240px);
+                                text-align: center;
+                                padding: 10px;
+                                .img {
+                                    img {
+                                        @include publics(160px, 160px);
+                                    }
+                                }
+                                .title {
+                                    color: #666;
+                                    font-size: 14px;
+                                    border-bottom: 1px dashed #ccc;
+                                }
+                                .price {
+                                    color: #e52d88;
+                                    font-size: 14px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        //公共样式部分
+        .eShop_content{
+            #content_right_alike{
+                .tables{
+                    @include publics(650px, 539px);
+                    #btns {
+                        @include publics(108px, 44px);
+                        background: #f6f6f6;
+                        cursor: pointer;
+                        //下面两行是为了去掉按钮之间默认空格
+                        display: inline-block;
+                        margin-right: -5px;
+                    }
+                    .active {
+                        background: white !important;
+                    }
+                    #contents {
+                        @include publics(650px, 539px);
+                        display: none;
+                        .tb {
+                            @include publics(650px, 539px);
+                            li {
+                                float: left;
+                                @include publics(216px, 269px);
+                                text-align: center;
+                                padding: 5px;
+                                .img {
+                                    img {
+                                        @include publics(160px, 160px);
+                                    }
+                                }
+                                .title {
+                                    color: #666;
+                                    font-size: 14px;
+                                    border-bottom: 1px dashed #ccc;
+                                }
+                                .price {
+                                    color: #e52d88;
+                                    font-size: 14px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .rights{
+                    @include publics(250px, 539px);
+                    padding: 0 20px;
+                    .top{
+                        border-bottom: 2px solid #ccc;
+                    }
+                    .top,.bottom{
+                        @include publics(100%, 269px);
+                        text-align: center;
+                        padding: 10px 0;
+                        h1{
+                            font-size: 18px;
+                        }
+                        img{
+                           @include publics(140px, 140px);
+                           margin: 10px 0; 
+                        }
+                        p{
+                            font-size: 14px;
+                            color: grey;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+        
+        //时尚饰品
+        #shipin {
+            @include publics(100%, 610px);
+            padding-top: 30px;
+            .eShop_content_box {
+                @include publics(100%, 549px);
+            }
+        }
+        //纯银首饰
+        #shoushi {
+            @include publics(100%, 610px);
+            padding-top: 30px;
+            .eShop_content_box {
+                @include publics(100%, 549px);
+            }
+        }
+        //适销平台
+        #pingtai {
+            @include publics(100%, 610px);
+            padding-top: 30px;
+            .eShop_content_box {
+                @include publics(100%, 549px);
+            }
+        }
+        //品牌商家
+        #pinpai {
+            @include publics(100%, 320px);
+            padding-top: 10px;
+            ul {
+                height: 280px;
+                li {
+                    float: left;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    a {
+                        &:hover img {
+                            transform: scale(1.2);
+                        }
+                        img {
+                            width: 140px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        //首饰产地
+        #chandi {
+            @include publics(100%, 235px);
+            padding-top: 10px;
+            .eShop_production_list {
+                @include publics(100%, 184px);
+                display: flex;
+                padding-top: 10px;
+                li {
+                    flex: 1;
+                    text-align: center;
+                    img {
+                        width: 92px;
+                        height: 125px;
+                    }
+                    .eShop_production_title {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    .eShop_production_desc {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        //行业资讯
+        #hangye {
+            @include publics(100%, 410px);
+            padding-top: 15px;
+            .eShop_info {
+                @include publics(100%, 342px);
+                padding-top: 10px;
+                //公共样式部分
+                h3 {
+                    margin-bottom: 10px;
+                }
+                .news_icon {
+                    display: block;
+                    @include publics(100%, 125px);
+                    color: black;
+                    .imgs1 {
+                        @include publics(180px, 125px);
+                        img {
+                            @include publics(180px, 125px);
+                        }
+                    }
+                    .lists {
+                        @include publics(230px, 95px);
+                        p {
+                            color: #989898;
+                            font-size: 14px;
+                        }
+                        .two {
+                            margin: 10px 0;
+                            box-sizing: content-box;
+                        }
+                    }
+                }
+                .news_content {
+                    @include publics(100%, 170px);
+                    li {
+                        @include publics(100%, 34px);
+                        list-style: disc;
+                        list-style-position: inside;
+                        border-bottom: 1px dashed #ccc;
+                        line-height: 34px;
+                        position: relative;
+                        a {
+                            font-size: 14px;
+                            color: black;
+                            span {
+                                color: #989898;
+                                display: inline-block;
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+                .eShop_info_left {
+                    @include publics(238px, 100%);
+                }
+                .eShop_info_center {
+                    @include publics(420px, 100%);
+                    margin-left: 35px;
+                }
+                .eShop_info_right {
+                    @include publics(420px, 100%);
+                }
+            }
+        }
+        //合作伙伴
+        #hezuo {
+            @include publics(100%, 320px);
+            padding-top: 10px;
+            .h_ullist {
+                @include publics(100%, 280px);
+                padding: 10px 0 0 20px;
+                li {
+                    float: left;
+                    a {
+                        img {
+                            @include publics(230px, 80px);
+                        }
+                        &:hover img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //尾部部分
+    #footer {
+        @include publics(100%, 503px);
+        background: #07223b;
+        .footer-main {
+            @include publics(100%, 274px);
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            padding-top: 20px;
+            li {
+                flex: 1;
+                text-align: center;
+                dl {
+                    dt {
+                        color: white;
+                        margin-bottom: 15px;
+                    }
+                    dd {
+                        a {
+                            color: white;
+                            font-size: 14px;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            li:nth-child(6) {
+                dl {
+                    dd {
+                        color: white;
+                        font-size: 14px;
+                    }
+                    .tel {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #f19f00;
+                    }
+                }
+            }
+            li:nth-child(7) {
+                dl {
+                    dd {
+                        color: white;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .copyright {
+            @include publics(100%, 14px);
+            padding: 15px 0;
+            text-align: center;
+            a {
+                color: white;
+                font-size: 14px;
+            }
+        }
+        .friendlink {
+            @include publics(100%, 28px);
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            a {
+                color: white;
+                font-size: 12px;
+            }
+        }
+        .footadd {
+            @include publics(100%, 82px);
+            margin-top: 80px;
+            ul {
+                @include publics(100%, 82px);
+                padding-left: 150px;
+                li {
+                    float: left;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    
+}

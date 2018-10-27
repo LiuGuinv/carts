@@ -1,0 +1,434 @@
+//主要内容部分------------
+#main_banner_boxs{
+    height: 2700px !important;
+    padding: 20px 0;
+    //顶部部分--------
+    .boxs_top{
+        width: 100%;
+        height: 30px;
+        ul{
+            display: inline-block;
+            width: 400px;
+            height: 100%;
+            padding: 5px 0;
+            li{
+                float: left;
+                height: 100%;
+                border-right: 1px solid #ccc;
+                padding: 0 10px;
+                a{
+                    font-size: 14px;
+                    color: black;
+                    &:hover{
+                        color: deeppink;
+                    }
+                }
+            }
+        }
+        span{
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+    
+    //商品详情部分-----------
+    .boxs_contents{
+        width: 100%;
+//      height: 900px;
+        overflow: hidden;
+        background: #fff;
+        margin-top: 15px;
+        //放大镜区域----------
+        #exzoom{
+            width: 450px;
+            padding-top: 15px;
+            margin-left: 15px;
+            .exzoom_img_box{
+                border: 1px solid #ccc;
+            }
+        }
+        
+        //右边商品详情部分---------------
+        .goods_inf{
+            width: 700px;
+//          background: darkseagreen;
+            margin-top: 15px;
+            margin-right: 15px;
+            //上半部分---------
+            .inf_top{
+                width: 100%;
+                height: 210px;
+                border-bottom: 1px solid #ccc;
+                //标题---------
+                .title{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                //产地----------
+                .place{
+                    margin: 10px 0;
+                    span{
+                        display: inline-block;
+                        margin-right: 20px;
+                        font-size: 14px;
+                    }
+                }
+                //价格----------
+                .price{
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    .pri{
+                        color: deeppink;
+                    }
+                }
+                //-----
+                .shu{
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                }
+                //-------
+                .sx{
+                    font-size: 14px;
+                    span{
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    .ff{
+                        border: 1px solid #e5e5e5;
+                        background: #eee;
+                        border-radius: 3px;
+                    }
+                }
+                
+            }
+            //中间部分------------
+            .detail_style{
+                width: 100%;
+                .detail_style_title{
+                    font-size: 14px;
+                    margin: 5px 0;
+                }
+                //商品类型部分--------------
+                ul{
+                    li{
+                        height: 41px;
+                        border-bottom: 1px solid #E5E5E5;
+                        padding-bottom: 5px;
+                        img{
+                            width: 35px;
+                            height: 35px;
+                        }
+                        span{
+                            font-size: 14px;
+                            display: inline-block;
+                            width: 150px;
+                        }
+                        //数量加减按钮------------
+                        .btn_action{
+                            #cutnum,#addnum{
+                                width: 22px;
+                                height: 22px;
+                                cursor: pointer;
+                                border: 1px solid #eee;
+                                &:hover{
+                                    background: #bc338b;
+                                    color: white;
+                                }
+                            }
+                            #nownum{
+                                width: 43px;
+                                height: 20px;
+                                border: 1px solid #DCDCDC;
+                                text-align: center;
+                            }  
+                        }
+                    }
+                }
+                //下拉按钮部分------------
+                #aline{
+                    height: 1px;
+                    margin-top: 10px;
+                    background: #E5E5E5;
+                }
+                #up_down{
+                    width: 60px;
+                    height: 20px;
+                    border: 1px solid #E5E5E5;
+                    border-top: 1px solid #fff;
+                    margin: -1px 0 0 50px;
+                    text-align: center;
+                    cursor: pointer;
+                    i{
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #ccc;
+                        &:hover{
+                            color: #bc338b;
+                        }
+                    }
+                }
+                
+            }
+            //下半部分---------
+            .shops{
+                height: 86px;
+                border: 1px solid #E5E5E5;
+                margin-top: 20px;
+                input{
+                    width: 132px;
+                    height: 34px;
+                    cursor: pointer;
+                    color: white;
+                    font-size: 18px;
+                    margin-top: 25px;
+                    margin-right: 10px;
+                }
+                #add_carts{
+                    background: #bc338b;
+                    margin-left: 350px;
+                }
+                #add_data{
+                    background: #1C3A8B;
+                }
+            }
+            //尾部细节--------
+            .jiaoyi{
+                margin-top: 20px;
+            }
+            .jiaoyi,.pay{
+                span{
+                    display: inline-block;
+                    width: 87px;
+                    height: 35px;
+                    font-size: 14px;
+                    text-align: center;
+                }
+                .ti{
+                    color: #cacaca;
+                }
+                .ico{
+                    i{
+                        font-size: 18px;
+                        color: #bc338b;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    //卖家热推------------
+    .retui_news{
+        height: 340px;
+        background: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .news_title{
+            padding: 10px;
+        }
+        ul{
+            li{
+                float: left;
+                width: 224px;
+                height: 275px;
+                margin-left: 15px;
+                a{
+                    img{
+                        width: 222px;
+                        height: 222px;
+                        border: 1px solid #E5E5E5;
+                    }
+                    h6{
+                        width: 224px;
+                        height: 36px;
+                        font-size: 14px;
+                        color: black;
+                    }
+                }
+            }
+        }
+        
+    }
+    //左边店铺信息和新品推荐-------
+    .shops_left{
+        width: 250px;
+        //店铺信息--------
+        .dianpu_inf{
+            height: 380px;
+            background: white;
+            margin-bottom: 20px;
+            h4{
+                height: 40px;
+                background: #bc338b;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                line-height: 40px;
+            }
+            h6{
+                color: #bc338b;
+                margin: 10px 0 10px 10px;
+            }
+            p{
+                font-size: 14px;
+                color: #a4a4a4;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            .divbutton{
+                height: 50px;
+                text-align: center;
+                a{
+                    display: inline-block;
+                    width: 140px;
+                    height: 40px;
+                    border: 1px solid #E9E9E9;
+                    background: #f3f3f3;
+                    border-radius: 3px;
+                    padding-top: 8px;
+                    color: #bc338b;
+                    i{
+                        font-size: 18px;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+            #blues{
+                a{
+                    color: #1296db;
+                }
+            }
+            
+        }
+        //新品推荐------------
+        .new_goods{
+            height: 950px;
+            background: white;
+            padding: 20px;
+            h6{
+                border-bottom: 1px solid gray;
+                padding-left: 5px;
+            }
+            .underline{
+                width: 80px;
+                height: 2px;
+                background: brown;
+                margin-top: -1px;
+            }
+            //ul里的商品信息-----------
+            ul{
+                li{
+                    height: 262px;
+                    margin-bottom: 20px;
+                    .img{
+                        img{
+                            width: 190px;
+                            height: 190px;
+                        }
+                    }
+                    .sale_num{
+                       margin: 8px 0; 
+                    }
+                    .sale_num,.titles a{
+                        font-size: 14px;
+                    }
+                    .titles a{
+                        color: #555;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    //右边商品参数--------------
+    .canshu{
+        width: 935px;
+        height: 1350px;
+        background: white;
+        //选项卡列表-----------
+        .lis{
+            height: 46px;
+            border-bottom: 2px solid #ccc;
+            .lis_tab{
+                li{
+                    float: left;
+                    width: 100px;
+                    height: 44px;
+                    text-align: center;
+                    line-height: 44px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                ._active{
+                    border: 1px solid #ccc;
+                    border-bottom: none;
+                    border-top: 2px solid #bc338b;
+                    color: #bc338b;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+        //实际参数详情--------
+        ._detail{
+            height: 1300px;
+            #miaoshu{
+                height: 80px;
+                border-bottom: 1px solid #ccc;
+                p{
+                    height: 30px;
+                    margin: 10px;
+                    span{
+                        display: inline-block;
+                        width: 200px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .con{
+            height: 1300px;
+            display: none;
+        }
+        //客户评价----------------
+        .pingjia{
+            padding: 20px;
+            #sub_btns{
+                width: 100px;
+                height: 30px;
+                border: 1px solid #ccc;
+                background: #E5E5E5;
+                border-radius: 3px;
+                margin: 10px 0;
+                &:hover{
+                    background: burlywood;
+                    color: white;
+                }
+            }
+            h1{
+                height: 50px;
+                border-bottom: 1px solid #DFDFDF;
+                color: #bc338b;
+            }
+            //写的评论----------
+            #sub_contents{
+                height: 1000px;
+                overflow: auto;
+                li{
+                    border-bottom: 1px dashed brown;
+                    padding: 8px;
+                    margin-top: 20px;
+                }
+            }
+            
+        }
+                
+    }
+    
+    
+}

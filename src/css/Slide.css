@@ -1,0 +1,53 @@
+.slide{
+	position: relative;
+	overflow: hidden;
+}
+
+.slide,.slide *{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.slide>*{
+	position: absolute;
+}
+.slide>ul{
+	left: 0;
+	top: 0;
+}
+.slide>ul>li{
+	float: left;
+}
+.slide>ol{
+	right: 600px;
+	bottom: 0;
+}
+.slide>ol>li{
+	float: left;
+}
+.slide>ol>li>span{
+	background: #87CEEB;
+	border-radius: 50%;
+	cursor: pointer;
+	display: block;
+	border: 1px solid gray;
+}
+.slide>p{
+	display: block;
+	background: #87CEEB;
+	border-radius: 50%;
+	cursor: pointer;
+	text-align: center;
+	opacity: 0;
+}
+.slide>p:nth-child(3){
+	left: 315px;
+}
+.slide>p:nth-child(4){
+	right: 260px;
+}
+
+.btnselected{
+	background: #fff !important;
+}
